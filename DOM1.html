@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- ID -->
+    <p id="one"><span>Hello!</span> How Are You ?</p>
+
+    <!-- Class -->
+    <ul>
+        <li class="tech"><span>Hello</span> one</li>
+        <li class="tech"><span>Hello</span> two</li>
+        <li class="tech"><span>Hello</span> three</li>
+    </ul>
+
+    <!-- Tag Name -->
+    <h4>Hey</h4>
+    <h4>Namsate</h4>
+    <h4>Hola</h4>
+
+    <!-- Query selector-->
+    <h2>Hello</h2>
+    <h2 class="classs">Hola</h2>
+    <h2 id="ids">Hey!</h2>
+
+
+    <script>
+        //Id
+            let var1 = document.getElementById("one");
+            console.log(var1.innerText);
+            console.log(var1.innerHTML);
+
+        //Class
+            let var2 = document.getElementsByClassName("tech");
+            console.log(var2[0].innerText);
+            var2[0].innerText="Nodejs";
+
+        //Tag Name
+        let var3 = document.getElementsByTagName("h4");
+        console.log(var3[1].innerText);
+        var3[2].innerText = "I am Catchyprogrammer";
+        var3[2].style.color = "red";
+
+        //Query Selector
+        let var4 = document.querySelector(".classs");
+        console.log(var4);
+
+        // var4.className = "hello";
+        // var4.classList = "hello hola hey";
+        var4.setAttribute("title","bhupinder");
+    </script>
+</body>
+</html>
