@@ -1,60 +1,38 @@
-OPERATORS
-Operators are the symbols between values that allow different operations like addition, subtraction, multiplication, and more. JavaScript has dozens of operators, so let’s focus on the ones you’re likely to see most often.
+// OPERATORS
+// Operators are symbols that perform operations on values. Let's explore some common operators in JavaScript.
 
-Arithmetic
-The + operator adds two numbers.
+// Arithmetic Operators
 
-EXAMPLE
-1 + 2;
-OUTPUT
-3
+// The + operator adds two numbers.
+let sum = 1 + 2; // EXAMPLE: 1 + 2
+console.log(sum); // OUTPUT: 3
 
-The - operator subtracts one number from another.
+// The - operator subtracts one number from another.
+let difference = 50 - 15; // EXAMPLE: 50 - 15
+console.log(difference); // OUTPUT: 35
 
-EXAMPLE
-50 - 15;
-OUTPUT
-35
+// The * operator multiplies two numbers. Notice it's an asterisk and not the × symbol commonly used in math.
+let product = 3 * 12; // EXAMPLE: 3 * 12
+console.log(product); // OUTPUT: 36
 
-The * operator multiplies two numbers. Notice it’s an asterisk and not the × symbol commonly used in math.
+// The / operator divides one number by another. Notice it's a forward slash and not the ÷ symbol commonly used in math.
+let quotient = 12 / 4; // EXAMPLE: 12 / 4
+console.log(quotient); // OUTPUT: 3
 
-EXAMPLE
-3 * 12;
-OUTPUT
-36
+// JavaScript expressions follow an order of operations, so even though + is written first, the multiplication happens first.
+let mixedOperation = 1 + 100 * 5; // EXAMPLE: 1 + 100 * 5
+console.log(mixedOperation); // OUTPUT: 501
 
-The / operator divides one number by another. Notice it’s a forward slash and not the ÷ symbol commonly used in math.
+// If you want more control over the order, use the grouping operator ().
+let groupedOperation = (1 + 100) * 5; // EXAMPLE: (1 + 100) * 5
+console.log(groupedOperation); // OUTPUT: 505
 
-EXAMPLE
-12 / 4;
-OUTPUT
-3
+// Concatenation
+// The + operator can also concatenate (add together) strings.
+let concatenatedString = "news" + "paper"; // EXAMPLE: "news" + "paper"
+console.log(concatenatedString); // OUTPUT: "newspaper"
 
-JavaScript expressions follow an order of operations, so even though + is written first in the following example, the multiplication happens first between the last two numbers and *.
-
-EXAMPLE
-1 + 100 * 5;
-OUTPUT
-501
-
-If want more control over the order, that’s where the grouping operator comes in handy.
-
-Grouping
-() operator groups other values and operations. Code located between parentheses evaluates first as JavaScript solves each operation moving from left to right. Adding the grouping operator to the previous example causes 1 + 100 to evaluate first.
-
-EXAMPLE
-(1 + 100) * 5;
-OUTPUT
-505
-Concatenation
-The + operator can also concatenate strings, which is another way of saying it can add them together.
-
-EXAMPLE
-"news" + "paper";
-OUTPUT
-"newspaper"
-Assignment
-The = operator assigns values. It’s used for setting the value of variables.
-
-EXAMPLE
-var dinner = "sushi";
+// Assignment
+// The = operator assigns values. It's used for setting the value of variables.
+let dinner = "sushi"; // EXAMPLE: var dinner = "sushi";
+console.log(dinner); // OUTPUT: "sushi"
